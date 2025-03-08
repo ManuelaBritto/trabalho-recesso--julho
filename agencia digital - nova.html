@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Britto Architecture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D5D9D5;
+        }
+        .logo{ text-align: left;position: fixed; top: 0;z-index: 1000;}
+        header{
+            height: 70px;
+            color: black;
+           opacity: 80%;
+            text-align: right;
+            position: fixed;
+            top: 10;
+            left: 0;
+            width: 100%;
+           }
+        .Foto {
+           background-color: #E0E4E0;
+        }
+        .fundorodapé{
+            background-color: black;
+            opacity:95% ;
+        }
+        .rodape {
+            color: #white;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;      }
+        .topco1{
+            padding: 10px;
+            text-align: center;
+        }
+       
+        h3{text-align: center; font-family:mono; color:#3F3F3F }
+        H1{text-align: center;font-family: sans; color: #0A1500}
+        H4{text-align: center; font-family:mono; color:#3F3F3F }
+/*Fotos da aba "oq fazemos" */
+        .album {
+    background-color:black;
+    padding:10px;
+    }
+
+    .pagina {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+    .pagina2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;}
+
+.figurinha {
+    width: 220px;
+    height: 250px;}
+/*foto com legenda na aba projeto */
+
+ .topco2{ background-color: #081000; opacity: 90%;
+             justify-content: space-around;
+             text-align: center;}
+        
+        .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    .image-container img {
+        max-width: 100%; /*imagem se ajuste ao contêiner */
+        display: block;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+        color: white;
+        text-align: center;
+        opacity: 0; /* invisível */
+        transition: opacity 0.3s ease; /* Efeito de transição suave */
+        pointer-events: none; /* Garante que o overlay não capture eventos do mouse */
+    }
+    .image-container:hover .overlay {
+        opacity: 1; /* Torna o overlay visível quando passar o mouse */
+    }
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+.topco3{ background-color: #081000; 
+             justify-content: space-around;
+             text-align: center;} 
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho"  style="background-color: black;">
+     <div class="logo"> <img id="logo" src="foto/logo1.png" width="200px" height="70px" style=""></div>
+        <div style="display: inline-flex; ">
+            <h2 style="margin-right: 25px; color: white; font-family: arial;"><a style="color:white; text-decoration: none;" href="#BEM-VINDO">Home</h2>
+            <h2 style="margin-right: 25px; color: white; font-family: arial;"><a style="color:white; text-decoration: none;" href="#Oq fazemos">Serviços</h2>
+            <h2 style="margin-right: 25px; color:white; font-family: arial;"><a style="color:white; text-decoration: none;" href="#Projetos">Projetos</h2>
+            <h2 style="margin-right: 25px; color:white; font-family: arial;"><a style="color:white; text-decoration: none;" href="#rodape">Contato</h2>
+         </div>
+</header>
+
+<nav>
+    <div style=" z-index: 1;"class="Foto">
+        <img  id="BEM-VINDO"style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);" src="https://wallpapersmug.com/download/2560x1080/1e0637/glass-facade-building.jpg" width="100%" height="600">
+        <div style=" top: 98px; left: 560px; position: absolute; z-index: 2;"><img  src="foto/logo2.png" height="400"></div>
+        <div style="box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.9)" class="topco1"><h1>BEM-VINDO À BRITTO ARCHITECTURE!</h1>
+        <h3>Onde transformamos sonhos em realidade através da arquitetura inovadora e sustentável.</h3>
+   <br>
+        <H1>QUEM SOMOS</H1>
+        <h3>Somos uma equipe apaixonada de arquitetos e designers comprometidos em criar espaços inspiradores e funcionais que refletem a identidade única de cada cliente. Com anos de experiência no setor, combinamos criatividade, expertise técnica e um profundo entendimento das necessidades dos nossos clientes para entregar projetos excepcionais.</h3>
+    <br>
+    <div>
+        <H1>O QUE FAZEMOS</H1>
+        <h3>Oferecemos uma gama completa de serviços de arquitetura, desde a concepção inicial até a conclusão do projeto. Nossos serviços incluem:
+        </h3><br>
+        <main>
+            <div class="pagina">
+                 <div class="image-container">
+                    <div class="figurinha">
+                    <img src="https://www.artisticstairs.com/wp-content/uploads/2020/11/Free-Consultation-for-Staircases-and-Railings.jpg" height="250px" width="220px">
+                            <p style="color: black; text-align: center; font-family:mono">Projetos Arquitetônicos</p>
+                         <div class="overlay">
+                            <div class="text">
+            Desenvolvemos projetos personalizados que harmonizam estética e funcionalidade.
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <div class="image-container">
+                    <div class="figurinha">
+                    <img src="https://images.homify.com/images/a_0,c_limit,f_auto,h_1024,q_auto,w_1024/v1439320370/p/photo/image/815410/20150303_KI_%C3%BCLARIS_38e/fotos-de-salas-de-estar-moderno-por-designer-de-interiores-e-paisagista-iara-kilaris.jpg" height="250px" width="220px">
+                            <p style="color: black; text-align: center; font-family:mono">Designers de interiores</p>
+                         <div class="overlay">
+                            <div class="text">
+            Criamos ambientes que cativam e melhoram a qualidade de vida.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="image-container">
+                <div class="figurinha">
+                    <img src="https://www.vitabri.com/wp-inside/uploads/2023/02/demarche-rse-environnement-480x360.jpg" height="250px" width="220px">
+                            <p style="color: black; text-align: center; font-family:mono">Consultoria e Sustentabilidade</p>
+                         <div class="overlay">
+                            <div class="text">
+            Integrando práticas sustentáveis para projetos que respeitam o meio ambiente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="image-container">
+                <div class="figurinha">
+                    <img src="https://pro.webikeo.fr/wp-content/uploads/2019/01/finance-droit-webinar-2018.png" height="250px" width="220px" >
+                            <p style=" color:black ;text-align: center; font-family:mono">Gestão de Projetos</p>
+                         <div class="overlay">
+                            <div class="text">
+            Garantimos a execução eficiente e dentro do prazo.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div><br><br><br>
+    </div>
+    
+</main>
+ <div>
+   <h1 id="Oq fazemos">FILOSOFIA DA EQUIPE BRITTO</h1>
+   <h3>Na base de tudo o que fazemos está o compromisso com a qualidade, inovação e execelência. Acreditamos que cada projeto é uma oportunidade única para criar algo significativo e duradouro.</h3><br>
+       
+    </div>
+</div>
+</div>
+    <div class="topco2"><br><br>
+        <H1 style=" color: white;text-align: center;font-family: sans;">SERVIÇOS</H1>
+    <br><br>
+<main>
+    <div class="pagina2">
+        
+        <div class="image-container">
+    <img style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://th.bing.com/th/id/OIP.iNZaebAhOdoeqD6ArHCwsAAAAA?rs=1&pid=ImgDetMain" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+            De casas contemporâneas a renovações históricas, criamos lares que são verdadeiras obras de arte.
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://th.bing.com/th/id/R.311ce4aa9fa1d5524d918636514b1849?rik=e%2fHTtbXfdepBfw&riu=http%3a%2f%2fmacdesign.com.br%2fblog%2fwp-content%2fuploads%2f2018%2f01%2fcomo-a-arquitetura-comercial-impacta-nas-vendas.jpeg&ehk=Q4k1KgU6ZqRW4P7OoYyEJRjB5uDsTFBtokEa%2fCz0hm0%3d&risl=&pid=ImgRaw&r=0" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+           Transformamos espaços comerciais em ambientes que atraem clientes e melhoram a eficiência operacional.
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9)" src="https://www.loricrizel.arq.br/wp-content/uploads/2020/06/arq-unv-02.jpg" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+           Contribuímos para comunidades com projetos de meio institucionais.
+            </div>
+        </div>
+    </div>
+</main>
+<br><br><br><br>
+</div>
+<div> 
+</div>
+ <div class="topco3">
+<div>
+    <img id="Projetos"style="box-shadow:1px 0px 10px 10px rgba(0, 0, 0, 0.9);" src="https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/546/cached.offlinehbpl.hbpl.co.uk/galleries/NAW/NUH-ORAL-HEALTH_5.jpg" width="100%" height="730">
+    <br><br><br><br><br>
+        <div style=" top: 2140px; left: 540px; position: absolute; z-index: 2;"><img src="foto/projeto.png" height="500"></div>
+<main>
+    <div class="pagina2">
+        
+        <div class="image-container">
+    <img style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://www.construtorapatriani.com.br/_next/image?url=https:%2F%2Fd1l3zvrqp603kj.cloudfront.net%2FBanner_e_perspectivas_galeria_4750_X2992_mirai_suzano_01_840ea68ad4.jpg&w=1920&q=100" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+            Apartamento no Centro Morumbi - São Paulo,SP - 2 dorm
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://s3-sa-east-1.amazonaws.com/meuimovel/photo/Solidi/Solidi_IntenseVilaMariana_2.jpg" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+           Apartamento Intense Vila Mariana - Vila Mariana - São Paulo,SP - 3 dorm 
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://www.ceramicaburguina.com.br/wp-content/uploads/2016/01/2-jardim-de-inverno.jpg" height="250px"width="400px">
+    <div class="overlay">
+        <div class="text">
+           Apartamento Alphavile São Paulo,SP - 4 dorm
+            </div>
+        </div>
+    </div>
+</main>
+<br>
+<main>
+    <div class="pagina2">
+<div class="image-container">
+    <img style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://casaclaudia.abril.com.br/wp-content/uploads/2017/10/ape-01.jpg?quality=95&strip=info" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+            Apartamento Bello Sol - São Paulo,SP - 2 dorm
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://amaisd.com.br/wp-content/themes/theme/blog_images/3_4.jpg" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+           Apartamento Estilo industrial - São Paulo,SP - 3 dorm 
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://images.adsttc.com/media/images/580f/3b1a/e58e/ceb2/ec00/018a/newsletter/featured_image.jpg?1477393170" height="250px"width="400px">
+    <div class="overlay">
+        <div class="text">
+           Apartamento Roosevelt - São Paulo,SP - 2 dorms 
+            </div>
+        </div>
+    </div>
+</main>
+<br>
+<main>
+    <div class="pagina2">
+<div class="image-container">
+    <img style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://th.bing.com/th/id/R.7f0ebfddc5933d0e8050376b8f6670c4?rik=aHJA2wc0ZKqPMg&pid=ImgRaw&r=0" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+            Casa terrea + quintal - São Paulo,SP - 3 dorm
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://i.pinimg.com/564x/3f/c7/60/3fc76086a272e491aa5e7705e98893ba.jpg" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+        Casa c/ andar superior estilo tropical - Pinheiros - São Paulo,SP - 4 dorm 
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://i.pinimg.com/564x/20/0c/35/200c35e1005d21f87370cb2c4d912009.jpg" height="250px"width="400px">
+    <div class="overlay">
+        <div class="text">
+        Casa c/ andar estilo moderno rustico - Rio de Janeiro - 3 dorm
+            </div>
+        </div>
+    </div>
+</main>
+<br>
+<main>
+    <div class="pagina2">
+<div class="image-container">
+    <img style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://images.adsttc.com/media/images/6568/7494/0ca0/c32d/56aa/1b32/medium_jpg/casa-montes-claros-venta-arquitetos_31.jpg?1701344419" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+            Casa em Higienópolis - São Paulo,SP - 3 dorm
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://th.bing.com/th/id/OIP.38_5bfpWpvHv30Sb-8E_owHaFA?rs=1&pid=ImgDetMain" height="250px" width="400px">
+    <div class="overlay">
+        <div class="text">
+         Bistrô Vista Rio - Rio de Janeiro
+        </div>
+    </div>
+</div>
+        <div class="image-container">
+    <img  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9)" src="https://images.adsttc.com/media/images/53a2/2559/c07a/80fe/d500/01e0/large_jpg/PORTADA_50FRIENDS_01.jpg?1403135297" height="250px"width="400px">
+    <div class="overlay">
+        <div class="text">
+         Restaurante e Bistrô Rio - Rio de Janeiro 
+            </div>
+        </div>
+    </div>
+</main>
+<br>
+<h3 style="text-align: center; color: white;">Para mais informações acesse nosso Portifólio</h3>
+<br>
+</nav>
+
+<footer id="fundorodapé">
+    <div class="rodape">
+        <img id="rodape" style="opacity:80%;" src="foto/rodapé.png" height="690px" width=100%>
+    </div>
+</footer>
+</body>
+</html>
